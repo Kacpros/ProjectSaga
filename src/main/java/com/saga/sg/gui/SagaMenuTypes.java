@@ -16,6 +16,9 @@ public class SagaMenuTypes
 
     public static final RegistryObject<MenuType<SagaAnvilMenu>> SAGA_ANVIL_MENU = registerMenuType(SagaAnvilMenu::new, "saga_anvil_menu");
 
+    public static final RegistryObject<MenuType<BlacksmithStationMenu>> BLACKSMITH_STATION_MENU =
+            registerMenuType(BlacksmithStationMenu::new, "blacksmith_station_menu");
+
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory,
                                                                                                  String name) {
         return MENUS.register(name, () -> IForgeMenuType.create(factory));

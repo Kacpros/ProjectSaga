@@ -24,6 +24,9 @@ public class SagaBlocks
     public static final RegistryObject<Block> SAGA_ANVIL = registerBlock("saga_anvil",
             () -> new SagaAnvilBlock(BlockBehaviour.Properties.of(Material.METAL)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
+    public static final RegistryObject<Block> BLACKSMITH_STATION = registerBlock("blacksmith_station",
+            () -> new SagaAnvilBlock(BlockBehaviour.Properties.of(Material.METAL)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);

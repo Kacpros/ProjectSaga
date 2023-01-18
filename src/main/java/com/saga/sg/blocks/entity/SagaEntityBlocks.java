@@ -2,6 +2,7 @@ package com.saga.sg.blocks.entity;
 
 import com.saga.sg.Saga;
 import com.saga.sg.blocks.SagaBlocks;
+import com.saga.sg.blocks.entity.custom.BlacksmithStationEntity;
 import com.saga.sg.blocks.entity.custom.SagaAnvilEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,6 +19,11 @@ public class SagaEntityBlocks
             BLOCK_ENTITIES.register("saga_anvil_entity", () ->
                     BlockEntityType.Builder.of(SagaAnvilEntity::new,
                             SagaBlocks.SAGA_ANVIL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<BlacksmithStationEntity>> BLACKSMITH_STATION_ENTITY =
+            BLOCK_ENTITIES.register("saga_anvil_entity", () ->
+                    BlockEntityType.Builder.of(BlacksmithStationEntity::new,
+                            SagaBlocks.BLACKSMITH_STATION.get()).build(null));
 
 
     public static void register(IEventBus eventBus)
