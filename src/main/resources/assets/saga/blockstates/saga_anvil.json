@@ -1,0 +1,15 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "transform": "forge:default-block",
+        "model": "saga:saga_anvil",
+        "textures": {"texture": "saga:block/saga_anvil"}
+    },
+    "variants": {
+        "normal": [{}],
+        "facing=north": { "model": "saga:saga_anvil", "y": 0 },
+        "facing=south": { "model": "saga:saga_anvil", "y": 180 },
+        "facing=west":  { "model": "saga:saga_anvil", "y": 270 },
+        "facing=east":  { "model": "saga:saga_anvil", "y": 90 }
+    }
+}
