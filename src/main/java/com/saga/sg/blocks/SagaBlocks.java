@@ -1,6 +1,7 @@
 package com.saga.sg.blocks;
 
 import com.saga.sg.Saga;
+import com.saga.sg.blocks.custom.BlacksmithStationBlock;
 import com.saga.sg.blocks.custom.SagaAnvilBlock;
 import com.saga.sg.items.SagaItems;
 import net.minecraft.world.item.BlockItem;
@@ -25,7 +26,7 @@ public class SagaBlocks
             () -> new SagaAnvilBlock(BlockBehaviour.Properties.of(Material.METAL)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     public static final RegistryObject<Block> BLACKSMITH_STATION = registerBlock("blacksmith_station",
-            () -> new SagaAnvilBlock(BlockBehaviour.Properties.of(Material.METAL)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+            () -> new BlacksmithStationBlock(BlockBehaviour.Properties.of(Material.METAL)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -21,7 +21,7 @@ public class SagaEntityBlocks
                             SagaBlocks.SAGA_ANVIL.get()).build(null));
 
     public static final RegistryObject<BlockEntityType<BlacksmithStationEntity>> BLACKSMITH_STATION_ENTITY =
-            BLOCK_ENTITIES.register("saga_anvil_entity", () ->
+            BLOCK_ENTITIES.register("blacksmith_station_entity", () ->
                     BlockEntityType.Builder.of(BlacksmithStationEntity::new,
                             SagaBlocks.BLACKSMITH_STATION.get()).build(null));
 
